@@ -13,6 +13,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="5dp"
         android:layout_marginRight="5dp"
+        android:layout_marginBottom="3dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,68 +43,62 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/button72"
+                android:id="@+id/pos8A"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#00FFFFFF"
-                android:text="Button" />
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_chess_rok" />
 
             <ImageButton
-                android:id="@+id/button22"
+                android:id="@+id/pos8B"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button21"
+                android:id="@+id/pos8C"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button20"
+                android:id="@+id/pos8D"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button19"
+                android:id="@+id/pos8E"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button16"
+                android:id="@+id/pos8F"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button17"
+                android:id="@+id/pos8G"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button18"
+                android:id="@+id/pos8H"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
         </LinearLayout>
 
         <LinearLayout
@@ -113,68 +108,60 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/button73"
+                android:id="@+id/pos7A"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button74"
+                android:id="@+id/pos7B"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button75"
+                android:id="@+id/pos7C"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button76"
+                android:id="@+id/pos7D"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button77"
+                android:id="@+id/pos7E"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button78"
+                android:id="@+id/pos7F"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button79"
+                android:id="@+id/pos7G"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button80"
+                android:id="@+id/pos7H"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
         </LinearLayout>
 
         <LinearLayout
@@ -184,68 +171,60 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/button81"
+                android:id="@+id/pos6A"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button82"
+                android:id="@+id/pos6B"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button83"
+                android:id="@+id/pos6C"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button84"
+                android:id="@+id/pos6D"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button85"
+                android:id="@+id/pos6E"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button86"
+                android:id="@+id/pos6F"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button87"
+                android:id="@+id/pos6G"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button88"
+                android:id="@+id/pos6H"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
         </LinearLayout>
 
         <LinearLayout
@@ -255,68 +234,60 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/button89"
+                android:id="@+id/pos5A"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button90"
+                android:id="@+id/pos5B"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button91"
+                android:id="@+id/pos5C"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button92"
+                android:id="@+id/pos5D"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button93"
+                android:id="@+id/pos5E"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button94"
+                android:id="@+id/pos5F"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button95"
+                android:id="@+id/pos5G"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button96"
+                android:id="@+id/pos5H"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
         </LinearLayout>
 
         <LinearLayout
@@ -326,68 +297,60 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/button97"
+                android:id="@+id/pos4A"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button98"
+                android:id="@+id/pos4B"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button99"
+                android:id="@+id/pos4C"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button100"
+                android:id="@+id/pos4D"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button101"
+                android:id="@+id/pos4E"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button102"
+                android:id="@+id/pos4F"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button103"
+                android:id="@+id/pos4G"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button104"
+                android:id="@+id/pos4H"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
         </LinearLayout>
 
         <LinearLayout
@@ -397,68 +360,60 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/button105"
+                android:id="@+id/pos3A"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button106"
+                android:id="@+id/pos3B"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button107"
+                android:id="@+id/pos3C"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button108"
+                android:id="@+id/pos3D"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button109"
+                android:id="@+id/pos3E"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button110"
+                android:id="@+id/pos3F"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button111"
+                android:id="@+id/pos3G"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button112"
+                android:id="@+id/pos3H"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
         </LinearLayout>
 
         <LinearLayout
@@ -468,68 +423,60 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/button113"
+                android:id="@+id/pos2A"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button114"
+                android:id="@+id/pos2B"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button115"
+                android:id="@+id/pos2C"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button116"
+                android:id="@+id/pos2D"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button117"
+                android:id="@+id/pos2E"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button118"
+                android:id="@+id/pos2F"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button119"
+                android:id="@+id/pos2G"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button120"
+                android:id="@+id/pos2H"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
         </LinearLayout>
 
         <LinearLayout
@@ -539,68 +486,60 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/button121"
+                android:id="@+id/pos1A"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button122"
+                android:id="@+id/pos1B"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button123"
+                android:id="@+id/pos1C"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button124"
+                android:id="@+id/pos1D"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button125"
+                android:id="@+id/pos1E"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button126"
+                android:id="@+id/pos1F"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button127"
+                android:id="@+id/pos1G"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
 
             <ImageButton
-                android:id="@+id/button128"
+                android:id="@+id/pos1H"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:text="Button" />
+                android:background="#00FFFFFF" />
         </LinearLayout>
     </LinearLayout>
 
