@@ -7,16 +7,6 @@
     android:background="@color/madeira"
     tools:context=".model.Tabuleiro">
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@id/linearLayout12"
-        app:layout_constraintEnd_toEndOf="@id/linearLayout12"
-        app:layout_constraintStart_toStartOf="@id/linearLayout12"
-        app:layout_constraintTop_toTopOf="@id/linearLayout12"
-        app:srcCompat="@drawable/tabuleiro" />
-
     <LinearLayout
         android:id="@+id/linearLayout12"
         android:layout_width="0dp"
@@ -41,61 +31,62 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/pos8A"
+                android:id="@+id/posA8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#FFFFFF"
                 android:scaleType="centerCrop"
                 android:src="@drawable/ic_chess_rok" />
 
             <ImageButton
-                android:id="@+id/pos8B"
+                android:id="@+id/posB8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/pos8C"
+                android:id="@+id/posC8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/pos8D"
+                android:id="@+id/posD8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/pos8E"
+                android:id="@+id/posE8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/pos8F"
+                android:id="@+id/posF8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/pos8G"
+                android:id="@+id/posG8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/pos8H"
+                android:id="@+id/posH8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
         </LinearLayout>
 
         <LinearLayout
@@ -105,61 +96,61 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/pos7A"
+                android:id="@+id/posA7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF"
+                android:background="#5A5A5A"
                 android:scaleType="center" />
 
             <ImageButton
-                android:id="@+id/pos7B"
+                android:id="@+id/posB7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/pos7C"
+                android:id="@+id/posC7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/pos7D"
+                android:id="@+id/posD7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/pos7E"
+                android:id="@+id/posE7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/pos7F"
+                android:id="@+id/posF7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/pos7G"
+                android:id="@+id/posG7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/pos7H"
+                android:id="@+id/posH7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
         </LinearLayout>
 
         <LinearLayout
@@ -169,60 +160,60 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/pos6A"
+                android:id="@+id/posA6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/pos6B"
+                android:id="@+id/posB6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/pos6C"
+                android:id="@+id/posC6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/pos6D"
+                android:id="@+id/posD6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/pos6E"
+                android:id="@+id/posE6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/pos6F"
+                android:id="@+id/posF6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/pos6G"
+                android:id="@+id/posG6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/pos6H"
+                android:id="@+id/posH6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
         </LinearLayout>
 
         <LinearLayout
@@ -232,60 +223,60 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/pos5A"
+                android:id="@+id/posA5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/pos5B"
+                android:id="@+id/posB5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/pos5C"
+                android:id="@+id/posC5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/pos5D"
+                android:id="@+id/posD5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/pos5E"
+                android:id="@+id/posE5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/pos5F"
+                android:id="@+id/posF5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/pos5G"
+                android:id="@+id/posG5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/pos5H"
+                android:id="@+id/posH5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
         </LinearLayout>
 
         <LinearLayout
@@ -295,60 +286,60 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/pos4A"
+                android:id="@+id/posA4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/pos4B"
+                android:id="@+id/posB4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/pos4C"
+                android:id="@+id/posC4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/pos4D"
+                android:id="@+id/posD4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/pos4E"
+                android:id="@+id/posE4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/pos4F"
+                android:id="@+id/posF4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/pos4G"
+                android:id="@+id/posG4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/pos4H"
+                android:id="@+id/posH4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
         </LinearLayout>
 
         <LinearLayout
@@ -358,124 +349,60 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/pos3A"
+                android:id="@+id/posA3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/pos3B"
+                android:id="@+id/posB3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/pos3C"
+                android:id="@+id/posC3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/pos3D"
+                android:id="@+id/posD3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/pos3E"
+                android:id="@+id/posE3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/pos3F"
+                android:id="@+id/posF3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/pos3G"
+                android:id="@+id/posG3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/pos3H"
+                android:id="@+id/posH3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/pos2A"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#00FFFFFF" />
-
-            <ImageButton
-                android:id="@+id/pos2B"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#00FFFFFF" />
-
-            <ImageButton
-                android:id="@+id/pos2C"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#00FFFFFF" />
-
-            <ImageButton
-                android:id="@+id/pos2D"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#00FFFFFF" />
-
-            <ImageButton
-                android:id="@+id/pos2E"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#00FFFFFF" />
-
-            <ImageButton
-                android:id="@+id/pos2F"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#00FFFFFF" />
-
-            <ImageButton
-                android:id="@+id/pos2G"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#00FFFFFF" />
-
-            <ImageButton
-                android:id="@+id/pos2H"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
 
         </LinearLayout>
 
@@ -486,61 +413,126 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/pos1A"
+                android:id="@+id/posA2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/pos1B"
+                android:id="@+id/posB2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/pos1C"
+                android:id="@+id/posC2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/pos1D"
+                android:id="@+id/posD2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/pos1E"
+                android:id="@+id/posE2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/pos1F"
+                android:id="@+id/posF2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/pos1G"
+                android:id="@+id/posG2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/pos1H"
+                android:id="@+id/posH2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#00FFFFFF" />
+                android:background="#5A5A5A" />
+
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/posA1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#5A5A5A" />
+
+            <ImageButton
+                android:id="@+id/posB1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFFFFF" />
+
+            <ImageButton
+                android:id="@+id/posC1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#5A5A5A" />
+
+            <ImageButton
+                android:id="@+id/posD1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFFFFF" />
+
+            <ImageButton
+                android:id="@+id/posE1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#5A5A5A" />
+
+            <ImageButton
+                android:id="@+id/posF1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFFFFF" />
+
+            <ImageButton
+                android:id="@+id/posG1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#5A5A5A" />
+
+            <ImageButton
+                android:id="@+id/posH1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFFFFF" />
+        </LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout
@@ -550,14 +542,15 @@
         android:layout_marginLeft="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout12">
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/notacaoA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -565,7 +558,7 @@
             android:text="A" />
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/notacaoB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -573,7 +566,7 @@
             android:text="B" />
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/notacaoC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -581,7 +574,7 @@
             android:text="C" />
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/notacaoD"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -589,7 +582,7 @@
             android:text="D" />
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/notacaoE"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -597,7 +590,7 @@
             android:text="E" />
 
         <TextView
-            android:id="@+id/textView17"
+            android:id="@+id/notacaoF"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -605,7 +598,7 @@
             android:text="F" />
 
         <TextView
-            android:id="@+id/textView18"
+            android:id="@+id/notacaoG"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -613,7 +606,7 @@
             android:text="G" />
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/notacaoH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -624,74 +617,81 @@
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="@+id/linearLayout12"
-        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout12"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout12">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView21"
-            android:layout_width="match_parent"
+            android:id="@+id/notacao8"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center|center_horizontal"
+            android:gravity="center_vertical"
             android:text="8" />
 
         <TextView
-            android:id="@+id/textView22"
-            android:layout_width="match_parent"
+            android:id="@+id/notacao7"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center|center_horizontal"
+            android:gravity="center_vertical"
             android:text="7" />
 
         <TextView
-            android:id="@+id/textView23"
-            android:layout_width="match_parent"
+            android:id="@+id/notacao6"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center|center_horizontal"
+            android:gravity="center_vertical"
             android:text="6" />
 
         <TextView
-            android:id="@+id/textView24"
-            android:layout_width="match_parent"
+            android:id="@+id/notacao5"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center|center_horizontal"
+            android:gravity="center_vertical"
             android:text="5" />
 
         <TextView
-            android:id="@+id/textView25"
-            android:layout_width="match_parent"
+            android:id="@+id/notacao4"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center|center_horizontal"
+            android:gravity="center_vertical"
             android:text="4" />
 
         <TextView
-            android:id="@+id/textView26"
-            android:layout_width="match_parent"
+            android:id="@+id/notacao3"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center|center_horizontal"
+            android:gravity="center_vertical"
             android:text="3" />
 
         <TextView
-            android:id="@+id/textView20"
-            android:layout_width="match_parent"
+            android:id="@+id/notacao2"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center|center_horizontal"
+            android:gravity="center_vertical"
             android:text="2" />
 
         <TextView
-            android:id="@+id/textView19"
-            android:layout_width="match_parent"
+            android:id="@+id/notacao1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center|center_horizontal"
+            android:gravity="center_vertical"
             android:text="1" />
     </LinearLayout>
 
