@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/madeira"
-    tools:context=".model.Tabuleiro">
+    tools:context=".activity.TabuleiroActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout12"
@@ -32,12 +32,16 @@
 
             <ImageButton
                 android:id="@+id/posA8"
+                style="?android:attr/borderlessButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FFFFFF"
-                android:scaleType="centerCrop"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="pos8A"
+                android:scaleType="center"
                 android:src="@drawable/ic_chess_rok" />
+
 
             <ImageButton
                 android:id="@+id/posB8"
