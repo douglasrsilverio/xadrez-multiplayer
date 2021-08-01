@@ -38,17 +38,20 @@
                 android:layout_weight="1"
                 android:background="#FFFFFF"
                 android:foreground="?attr/selectableItemBackgroundBorderless"
-                android:onClick="pos8A"
-                android:scaleType="center"
-                android:src="@drawable/ic_chess_rok" />
+                android:onClick="posA8"
+                android:src="@drawable/ic_brancas_rainha" />
 
 
             <ImageButton
                 android:id="@+id/posB8"
+                style="?android:attr/borderlessButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#5A5A5A" />
+                android:background="#5A5A5A"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="posB8"
+                />
 
             <ImageButton
                 android:id="@+id/posC8"

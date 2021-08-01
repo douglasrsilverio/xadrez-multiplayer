@@ -9,7 +9,7 @@ import br.com.douglassilverio.xadrez_multiplayer.R
 import br.com.douglassilverio.xadrez_multiplayer.model.EstadoBotoes
 
 
-class TabuleiroActivity : AppCompatActivity(), View.OnClickListener {
+class TabuleiroActivity : AppCompatActivity(){
 
     private lateinit var estadoBotoes: EstadoBotoes
 
@@ -18,15 +18,10 @@ class TabuleiroActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_tabuleiro)
 
         estadoBotoes = EstadoBotoes()
-
     }
 
-    private fun getColorBackgroundBt(view: View) : Int{
+    private fun getColorBackgroundBt(view: View) : Int {
         return (view.background as ColorDrawable).color
-    }
-
-     override fun onClick(view: View){
-        destaquePosPecaSelecionada(view)
     }
 
     fun destaquePosPecaSelecionada(view: View) {
@@ -41,12 +36,22 @@ class TabuleiroActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    fun pos8A(view: View){
-
-    }
-
     fun ifPecaDestacadaAndNextHavePecaAliadaReset(){
 
     }
+
+    fun comportamentoBotoes(view: View){
+        destaquePosPecaSelecionada(view)
+    }
+
+    fun posA8(view: View){
+        comportamentoBotoes(view)
+    }
+
+    fun posB8(view: View){
+        comportamentoBotoes(view)
+    }
+
+
 
 }
