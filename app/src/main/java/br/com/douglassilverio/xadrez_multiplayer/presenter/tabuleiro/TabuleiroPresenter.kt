@@ -5,37 +5,47 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.view.View
 import br.com.douglassilverio.xadrez_multiplayer.activity.tabuleiro.TabuleiroActivity
-import br.com.douglassilverio.xadrez_multiplayer.model.EstadoBotoes
+import br.com.douglassilverio.xadrez_multiplayer.model.EstadoBotao
 
-class TabuleiroPresenter(var context: Context, var view: TabuleiroActivity) : ITabuleiroPresenter{
+class TabuleiroPresenter(var context: Context, var viewTabuleiroActivity: TabuleiroActivity) : ITabuleiroPresenter{
 
-    private lateinit var estadoBotoes: EstadoBotoes
-
-    init {
-        estadoBotoes = EstadoBotoes()
-    }
+    private var estadoBotao: EstadoBotao = EstadoBotao()
 
     override fun validaAcao(posSelecionada: View){
-        destacarPosSelecionada(posSelecionada)
-    }
-
-    private fun getColorBackgroundBt(posSelecionada: View) : Int {
-        return (posSelecionada.background as ColorDrawable).color
-    }
-
-    fun destacarPosSelecionada(posSelecionada: View) {
-        if(getColorBackgroundBt(posSelecionada) != Color.RED) {
-            estadoBotoes.corPadrao = getColorBackgroundBt(posSelecionada)
-            view.mudarCorPosSelecionada(posSelecionada, Color.RED)
+        if(posSelecionada.id != estadoBotao.idUltimaPos && estadoBotao.idUltimaPos != 0) {
+            alterarDestaque(posSelecionada)
             return
         }
 
-        if(getColorBackgroundBt(posSelecionada) == Color.RED){
-            view.mudarCorPosSelecionada(posSelecionada, estadoBotoes.corPadrao)
+        destacarPosSelecionada(posSelecionada)
+    }
+
+    private fun getColorBackgroundPos(posSelecionada: View) : Int {
+        return (posSelecionada.background as ColorDrawable).color
+    }
+
+    private fun destacarPosSelecionada(posSelecionada: View) {
+        if(getColorBackgroundPos(posSelecionada) != Color.RED) {
+            estadoBotao.corPadraoUltimaPos = getColorBackgroundPos(posSelecionada)
+            estadoBotao.idUltimaPos = posSelecionada.id
+
+            viewTabuleiroActivity.mudarCorPos(posSelecionada, Color.RED)
+            return
+        }
+
+        if(getColorBackgroundPos(posSelecionada) == Color.RED){
+            viewTabuleiroActivity.mudarCorPos(posSelecionada, estadoBotao.corPadraoUltimaPos)
         }
     }
 
-    fun comportamentoBotoes(view: View){
-        destacarPosSelecionada(view)
+    fun alterarDestaque(novaPosDestacar: View){
+        var antigaPosDestacada: View = viewTabuleiroActivity.findViewById(estadoBotao.idUltimaPos)
+        viewTabuleiroActivity.mudarCorPos(antigaPosDestacada, estadoBotao.corPadraoUltimaPos)
+
+        estadoBotao.corPadraoUltimaPos = getColorBackgroundPos(novaPosDestacar)
+        estadoBotao.idUltimaPos = novaPosDestacar.id
+        viewTabuleiroActivity.mudarCorPos(novaPosDestacar, Color.RED)
+
     }
+
 }

@@ -1,12 +1,9 @@
 package br.com.douglassilverio.xadrez_multiplayer.activity.tabuleiro
 
-import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import br.com.douglassilverio.xadrez_multiplayer.R
-import br.com.douglassilverio.xadrez_multiplayer.model.EstadoBotoes
 import br.com.douglassilverio.xadrez_multiplayer.presenter.tabuleiro.ITabuleiroPresenter
 import br.com.douglassilverio.xadrez_multiplayer.presenter.tabuleiro.TabuleiroPresenter
 
@@ -26,15 +23,11 @@ class TabuleiroActivity : AppCompatActivity(){
         tabuleiroPresenter = TabuleiroPresenter(this, this)
     }
 
-    fun mudarCorPosSelecionada(btSelecionado: View, cor: Int){
-       btSelecionado.setBackgroundColor(cor)
+    fun mudarCorPos(btSelecionado: View, cor: Int){
+        btSelecionado.setBackgroundColor(cor)
    }
 
-    fun ifPecaDestacadaAndOutraSelecionadaRemoverDestaque(){
-
-    }
-
-    fun moverPeca(){
+    fun moverPeca(peca: View, posX: Int, posY: Int){
 
     }
 
@@ -46,6 +39,7 @@ class TabuleiroActivity : AppCompatActivity(){
         tabuleiroPresenter.validaAcao(btB8)
     }
 
-
-
+    fun posC8(btC8: View){
+        tabuleiroPresenter.validaAcao(btC8)
+    }
 }

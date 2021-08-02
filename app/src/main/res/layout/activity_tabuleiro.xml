@@ -8,14 +8,175 @@
     tools:context=".activity.tabuleiro.TabuleiroActivity">
 
     <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/notacaoUpA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="A" />
+
+        <TextView
+            android:id="@+id/notacaoUpB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="B" />
+
+        <TextView
+            android:id="@+id/notacaoUpC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="C" />
+
+        <TextView
+            android:id="@+id/notacaoUpD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="D" />
+
+        <TextView
+            android:id="@+id/notacaoUpE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="E" />
+
+        <TextView
+            android:id="@+id/notacaoUpF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="F" />
+
+        <TextView
+            android:id="@+id/notacaoUpG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="G" />
+
+        <TextView
+            android:id="@+id/notacaoUpH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="H" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout12"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/notacaoRight8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="8" />
+
+        <TextView
+            android:id="@+id/notacaoRight7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="7" />
+
+        <TextView
+            android:id="@+id/notacaoRight6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="6" />
+
+        <TextView
+            android:id="@+id/notacaoRight5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="5" />
+
+        <TextView
+            android:id="@+id/notacaoRight4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="4" />
+
+        <TextView
+            android:id="@+id/notacaoRight3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="3" />
+
+        <TextView
+            android:id="@+id/notacaoRight2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/notacaoRight1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="1" />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/linearLayout12"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         android:layout_marginBottom="24dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -50,15 +211,16 @@
                 android:layout_weight="1"
                 android:background="#5A5A5A"
                 android:foreground="?attr/selectableItemBackgroundBorderless"
-                android:onClick="posB8"
-                />
+                android:onClick="posB8" />
 
             <ImageButton
                 android:id="@+id/posC8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#FFFFFF" />
+                android:background="#FFFFFF"
+                android:onClick="posC8"
+                android:src="@drawable/ic_brancas_bispo" />
 
             <ImageButton
                 android:id="@+id/posD8"
@@ -543,12 +705,13 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         android:layout_marginBottom="4dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -557,7 +720,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout12">
 
         <TextView
-            android:id="@+id/notacaoA"
+            android:id="@+id/notacaoDownA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -565,7 +728,7 @@
             android:text="A" />
 
         <TextView
-            android:id="@+id/notacaoB"
+            android:id="@+id/notacaoDownB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -573,7 +736,7 @@
             android:text="B" />
 
         <TextView
-            android:id="@+id/notacaoC"
+            android:id="@+id/notacaoDownC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -581,7 +744,7 @@
             android:text="C" />
 
         <TextView
-            android:id="@+id/notacaoD"
+            android:id="@+id/notacaoDownD"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -589,7 +752,7 @@
             android:text="D" />
 
         <TextView
-            android:id="@+id/notacaoE"
+            android:id="@+id/notacaoDownE"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -597,7 +760,7 @@
             android:text="E" />
 
         <TextView
-            android:id="@+id/notacaoF"
+            android:id="@+id/notacaoDownF"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -605,7 +768,7 @@
             android:text="F" />
 
         <TextView
-            android:id="@+id/notacaoG"
+            android:id="@+id/notacaoDownG"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -613,7 +776,7 @@
             android:text="G" />
 
         <TextView
-            android:id="@+id/notacaoH"
+            android:id="@+id/notacaoDownH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -622,6 +785,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -638,7 +802,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/notacao8"
+            android:id="@+id/notacaoLeft8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -646,7 +810,7 @@
             android:text="8" />
 
         <TextView
-            android:id="@+id/notacao7"
+            android:id="@+id/notacaoLeft7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -654,7 +818,7 @@
             android:text="7" />
 
         <TextView
-            android:id="@+id/notacao6"
+            android:id="@+id/notacaoLeft6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -662,7 +826,7 @@
             android:text="6" />
 
         <TextView
-            android:id="@+id/notacao5"
+            android:id="@+id/notacaoLeft5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -670,7 +834,7 @@
             android:text="5" />
 
         <TextView
-            android:id="@+id/notacao4"
+            android:id="@+id/notacaoLeft4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -678,7 +842,7 @@
             android:text="4" />
 
         <TextView
-            android:id="@+id/notacao3"
+            android:id="@+id/notacaoLeft3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -686,7 +850,7 @@
             android:text="3" />
 
         <TextView
-            android:id="@+id/notacao2"
+            android:id="@+id/notacaoLeft2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -694,7 +858,7 @@
             android:text="2" />
 
         <TextView
-            android:id="@+id/notacao1"
+            android:id="@+id/notacaoLeft1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
