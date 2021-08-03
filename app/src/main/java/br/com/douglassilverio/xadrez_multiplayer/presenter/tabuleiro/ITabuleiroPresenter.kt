@@ -4,5 +4,5 @@ import android.view.View
 
 interface ITabuleiroPresenter {
 
-    fun validaAcao(posSelecionada: View)
+    fun recebeAcao(posSelecionada: View)
 }
