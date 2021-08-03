@@ -6,12 +6,18 @@ import android.graphics.drawable.ColorDrawable
 import android.view.View
 import br.com.douglassilverio.xadrez_multiplayer.activity.tabuleiro.TabuleiroActivity
 import br.com.douglassilverio.xadrez_multiplayer.model.EstadoBotao
+import br.com.douglassilverio.xadrez_multiplayer.model.RegrasJogo
 
 class TabuleiroPresenter(var context: Context, var viewTabuleiroActivity: TabuleiroActivity) : ITabuleiroPresenter{
 
+    init {
+        var RegrasJogo = RegrasJogo()
+    }
+
     private var estadoBotao: EstadoBotao = EstadoBotao()
 
-    override fun validaAcao(posSelecionada: View){
+    override fun recebeAcao(posSelecionada: View){
+
         if(posSelecionada.id != estadoBotao.idUltimaPos && estadoBotao.idUltimaPos != 0) {
             destacarNewPosPecaAliada(posSelecionada)
             return
@@ -45,7 +51,8 @@ class TabuleiroPresenter(var context: Context, var viewTabuleiroActivity: Tabule
         estadoBotao.corPadraoUltimaPos = getColorBackgroundPos(novaPosDestacar)
         estadoBotao.idUltimaPos = novaPosDestacar.id
         viewTabuleiroActivity.mudarCorPos(novaPosDestacar, Color.RED)
-
     }
+
+
 
 }

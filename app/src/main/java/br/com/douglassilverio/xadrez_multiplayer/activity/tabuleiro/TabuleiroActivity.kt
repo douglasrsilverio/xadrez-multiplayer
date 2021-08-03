@@ -32,14 +32,14 @@ class TabuleiroActivity : AppCompatActivity(){
     }
 
     fun posA8(btA8: View){
-        tabuleiroPresenter.validaAcao(btA8)
+        tabuleiroPresenter.recebeAcao(btA8)
     }
 
     fun posB8(btB8: View){
-        tabuleiroPresenter.validaAcao(btB8)
+        tabuleiroPresenter.recebeAcao(btB8)
     }
 
     fun posC8(btC8: View){
-        tabuleiroPresenter.validaAcao(btC8)
+        tabuleiroPresenter.recebeAcao(btC8)
     }
 }
