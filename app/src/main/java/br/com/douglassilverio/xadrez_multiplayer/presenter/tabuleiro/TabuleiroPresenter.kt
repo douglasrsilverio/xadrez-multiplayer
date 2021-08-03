@@ -13,7 +13,7 @@ class TabuleiroPresenter(var context: Context, var viewTabuleiroActivity: Tabule
 
     override fun validaAcao(posSelecionada: View){
         if(posSelecionada.id != estadoBotao.idUltimaPos && estadoBotao.idUltimaPos != 0) {
-            alterarDestaque(posSelecionada)
+            destacarNewPosPecaAliada(posSelecionada)
             return
         }
 
@@ -38,7 +38,7 @@ class TabuleiroPresenter(var context: Context, var viewTabuleiroActivity: Tabule
         }
     }
 
-    fun alterarDestaque(novaPosDestacar: View){
+    fun destacarNewPosPecaAliada(novaPosDestacar: View){
         var antigaPosDestacada: View = viewTabuleiroActivity.findViewById(estadoBotao.idUltimaPos)
         viewTabuleiroActivity.mudarCorPos(antigaPosDestacada, estadoBotao.corPadraoUltimaPos)
 
