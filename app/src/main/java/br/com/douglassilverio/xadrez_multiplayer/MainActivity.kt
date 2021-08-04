@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import br.com.douglassilverio.xadrez_multiplayer.activity.tabuleiro.TabuleiroActivity
+import br.com.douglassilverio.xadrez_multiplayer.model.PosicoesTabuleiro
 
 
 class MainActivity : AppCompatActivity() {
@@ -11,6 +12,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         abrirTabuleiro()
+        var p = PosicoesTabuleiro()
+        p.printPosicoesTabuleiro()
     }
 
     fun abrirTabuleiro(){

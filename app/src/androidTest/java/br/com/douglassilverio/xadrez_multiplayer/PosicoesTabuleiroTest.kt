@@ -1,11 +1,15 @@
-package br.com.douglassilverio.xadrez_multiplayer.model
+package br.com.douglassilverio.xadrez_multiplayer
 
 import android.util.Log
-import br.com.douglassilverio.xadrez_multiplayer.model.pecas.Pecas
+import androidx.test.ext.junit.runners.AndroidJUnit4
 import br.com.douglassilverio.xadrez_multiplayer.model.pecas.Torre
 import br.com.douglassilverio.xadrez_multiplayer.util.Constantes
+import org.junit.Test
+import org.junit.runner.RunWith
+import java.util.*
 
-class PosicoesTabuleiro {
+@RunWith(AndroidJUnit4::class)
+class PosicoesTabuleiroTest {
 
     var tb = Torre(Constantes.P1.toString(),0, 0)
 
@@ -19,8 +23,10 @@ class PosicoesTabuleiro {
         arrayOf(0, 0, 0, 0, 0, 0, 0, 0),
         arrayOf(0, 0, 0, 0, 0, 0, 0, 0))
 
+    @Test
     fun printPosicoesTabuleiro(){
-        for ((i, linha) in tabuleiro.withIndex())
-            Log.i(Constantes.TABULEIRO.toString(), tabuleiro[i].contentToString())
+        tabuleiro.forEach {
+            Log.i(Constantes.TABULEIRO.toString(), it.contentToString()) }
     }
+
 }
