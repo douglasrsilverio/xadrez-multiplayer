@@ -25,8 +25,8 @@ class PosicoesTabuleiroTest {
 
     @Test
     fun printPosicoesTabuleiro(){
-        tabuleiro.forEach {
-            Log.i(Constantes.TABULEIRO.toString(), it.contentToString()) }
+        var posicoes = " \n" + tabuleiro.contentDeepToString()
+        Log.i(Constantes.TABULEIRO.toString(), posicoes.split("],").joinToString("\n"))
     }
 
 }
