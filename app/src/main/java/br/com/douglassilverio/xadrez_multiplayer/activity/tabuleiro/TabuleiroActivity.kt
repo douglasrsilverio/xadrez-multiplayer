@@ -23,7 +23,7 @@ class TabuleiroActivity : AppCompatActivity(){
         tabuleiroPresenter = TabuleiroPresenter(this, this)
     }
 
-    fun mudarCorPos(btSelecionado: View, cor: Int){
+    fun mudarDestaquePos(btSelecionado: View, cor: Int){
         btSelecionado.setBackgroundColor(cor)
    }
 

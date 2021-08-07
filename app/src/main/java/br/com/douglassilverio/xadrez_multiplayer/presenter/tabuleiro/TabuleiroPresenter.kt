@@ -5,54 +5,70 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.view.View
 import br.com.douglassilverio.xadrez_multiplayer.activity.tabuleiro.TabuleiroActivity
-import br.com.douglassilverio.xadrez_multiplayer.model.EstadoBotao
-import br.com.douglassilverio.xadrez_multiplayer.model.RegrasJogo
+import br.com.douglassilverio.xadrez_multiplayer.model.EstadoPosicao
+import br.com.douglassilverio.xadrez_multiplayer.model.Jogador
+import br.com.douglassilverio.xadrez_multiplayer.model.PosicoesPecasTabuleiro
 
 class TabuleiroPresenter(var context: Context, var viewTabuleiroActivity: TabuleiroActivity) : ITabuleiroPresenter{
 
-    init {
-        var RegrasJogo = RegrasJogo()
-    }
+    var posicoesPecasTabuleiro = PosicoesPecasTabuleiro()
+    var jogador = Jogador()
 
-    private var estadoBotao: EstadoBotao = EstadoBotao()
+    private var estadoPosicao: EstadoPosicao = EstadoPosicao()
 
     override fun recebeAcao(posSelecionada: View){
+        tratarSelecaoPosicao(posSelecionada)
+    }
 
-        if(posSelecionada.id != estadoBotao.idUltimaPos && estadoBotao.idUltimaPos != 0) {
-            destacarNewPosPecaAliada(posSelecionada)
+    private fun tratarSelecaoPosicao(posSelecionada: View) {
+        if(mudarPecaSelecionada(posSelecionada))
             return
-        }
 
-        destacarPosSelecionada(posSelecionada)
+        if(selecionarPeca(posSelecionada))
+            return
+
+        if(desselecionarPeca(posSelecionada))
+            return
+    }
+
+    fun selecionarPeca(posSelecionada: View): Boolean{
+        if(getColorBackgroundPos(posSelecionada) != Color.RED && jogador.cor == getCorPecaSelecionada(posSelecionada)) {
+            estadoPosicao.corDestaqueUltimaPos = getColorBackgroundPos(posSelecionada)
+            estadoPosicao.idPosSelecionada = posSelecionada.id
+            viewTabuleiroActivity.mudarDestaquePos(posSelecionada, Color.RED)
+
+            return true
+        }
+        return false
+    }
+
+    fun desselecionarPeca(posSelecionada: View): Boolean{
+        if(getColorBackgroundPos(posSelecionada) == Color.RED){
+            viewTabuleiroActivity.mudarDestaquePos(posSelecionada, estadoPosicao.corDestaqueUltimaPos)
+            estadoPosicao.idPosSelecionada = 0
+            return true
+        }
+        return false
+    }
+
+    fun mudarPecaSelecionada(posSelecionada: View): Boolean{
+        if(posSelecionada.id != estadoPosicao.idPosSelecionada && estadoPosicao.idPosSelecionada != 0) {
+            var antigaPosDestacada: View = viewTabuleiroActivity.findViewById(estadoPosicao.idPosSelecionada)
+            viewTabuleiroActivity.mudarDestaquePos(antigaPosDestacada, estadoPosicao.corDestaqueUltimaPos)
+
+            estadoPosicao.corDestaqueUltimaPos = getColorBackgroundPos(posSelecionada)
+            estadoPosicao.idPosSelecionada = posSelecionada.id
+            viewTabuleiroActivity.mudarDestaquePos(posSelecionada, Color.RED)
+            return true
+        }
+        return false
+    }
+
+    fun getCorPecaSelecionada(posSelecionada: View){
+        
     }
 
     private fun getColorBackgroundPos(posSelecionada: View) : Int {
         return (posSelecionada.background as ColorDrawable).color
     }
-
-    private fun destacarPosSelecionada(posSelecionada: View) {
-        if(getColorBackgroundPos(posSelecionada) != Color.RED) {
-            estadoBotao.corPadraoUltimaPos = getColorBackgroundPos(posSelecionada)
-            estadoBotao.idUltimaPos = posSelecionada.id
-
-            viewTabuleiroActivity.mudarCorPos(posSelecionada, Color.RED)
-            return
-        }
-
-        if(getColorBackgroundPos(posSelecionada) == Color.RED){
-            viewTabuleiroActivity.mudarCorPos(posSelecionada, estadoBotao.corPadraoUltimaPos)
-        }
-    }
-
-    fun destacarNewPosPecaAliada(novaPosDestacar: View){
-        var antigaPosDestacada: View = viewTabuleiroActivity.findViewById(estadoBotao.idUltimaPos)
-        viewTabuleiroActivity.mudarCorPos(antigaPosDestacada, estadoBotao.corPadraoUltimaPos)
-
-        estadoBotao.corPadraoUltimaPos = getColorBackgroundPos(novaPosDestacar)
-        estadoBotao.idUltimaPos = novaPosDestacar.id
-        viewTabuleiroActivity.mudarCorPos(novaPosDestacar, Color.RED)
-    }
-
-
-
 }
