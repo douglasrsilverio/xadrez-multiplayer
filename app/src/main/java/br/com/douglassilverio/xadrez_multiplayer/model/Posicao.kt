@@ -15,12 +15,6 @@ class Posicao(private var peca:IPecas? = null, private var viewPosicao: View? = 
 
         return "$coluna$linha$corTipoPeca"
     }
-
-    fun novoParametro(viewPosicao: View?, linha:Int?, coluna:Int?, peca:IPecas? = null){
-        this.peca = peca
-        this.linha = linha
-        this.coluna = coluna
-    }
 }
 
 

@@ -10,7 +10,7 @@ import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
 class PosicoesTabuleiroTest {
-
+/*
     var posicao = Posicao(null,null, null, null)
     var tabuleiroPosicoes: Array<Array<Posicao>> = Array(7) {Array(7) {posicao} }
 
@@ -67,7 +67,7 @@ class PosicoesTabuleiroTest {
 
 
 
-        /*var viewPosicao:View = view.findViewById(R.id.posA1)
+        var viewPosicao:View = view.findViewById(R.id.posA1)
         posicao.novoParametro(viewPosicao = view, linha = 0, coluna = axisX)
         tabuleiroPosicoes[0][0] = posicao
         axisX++
@@ -329,7 +329,7 @@ class PosicoesTabuleiroTest {
         var view01:View = view.findViewById(R.id.posA1)
         posicao.novoParametro(viewPosicao = view, linha = 0, coluna = 0)
         tabuleiroPosicoes[0][0] = posicao
-*/
+
 
 
 
@@ -337,5 +337,5 @@ class PosicoesTabuleiroTest {
 
     }
 
-
+*/
 }
