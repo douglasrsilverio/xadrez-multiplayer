@@ -192,66 +192,66 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/posA8"
+                android:id="@+id/pos00"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FFFFFF"
                 android:foreground="?attr/selectableItemBackgroundBorderless"
-                android:onClick="posA8"
+                android:onClick="pos00"
                 android:src="@drawable/ic_brancas_rainha" />
 
 
             <ImageButton
-                android:id="@+id/posB8"
+                android:id="@+id/pos01"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#5A5A5A"
                 android:foreground="?attr/selectableItemBackgroundBorderless"
-                android:onClick="posB8" />
+                android:onClick="pos01" />
 
             <ImageButton
-                android:id="@+id/posC8"
+                android:id="@+id/pos02"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FFFFFF"
-                android:onClick="posC8"
+                android:onClick="pos02"
                 android:src="@drawable/ic_brancas_bispo" />
 
             <ImageButton
-                android:id="@+id/posD8"
+                android:id="@+id/pos03"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/posE8"
+                android:id="@+id/pos04"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/posF8"
+                android:id="@+id/pos05"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/posG8"
+                android:id="@+id/pos06"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/posH8"
+                android:id="@+id/pos07"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -265,7 +265,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/posA7"
+                android:id="@+id/pos10"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -273,175 +273,49 @@
                 android:scaleType="center" />
 
             <ImageButton
-                android:id="@+id/posB7"
+                android:id="@+id/pos11"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/posC7"
+                android:id="@+id/pos12"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/posD7"
+                android:id="@+id/pos13"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/posE7"
+                android:id="@+id/pos14"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/posF7"
+                android:id="@+id/pos15"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/posG7"
+                android:id="@+id/pos16"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/posH7"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#FFFFFF" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/posA6"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#FFFFFF" />
-
-            <ImageButton
-                android:id="@+id/posB6"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#5A5A5A" />
-
-            <ImageButton
-                android:id="@+id/posC6"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#FFFFFF" />
-
-            <ImageButton
-                android:id="@+id/posD6"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#5A5A5A" />
-
-            <ImageButton
-                android:id="@+id/posE6"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#FFFFFF" />
-
-            <ImageButton
-                android:id="@+id/posF6"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#5A5A5A" />
-
-            <ImageButton
-                android:id="@+id/posG6"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#FFFFFF" />
-
-            <ImageButton
-                android:id="@+id/posH6"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#5A5A5A" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/posA5"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#5A5A5A" />
-
-            <ImageButton
-                android:id="@+id/posB5"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#FFFFFF" />
-
-            <ImageButton
-                android:id="@+id/posC5"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#5A5A5A" />
-
-            <ImageButton
-                android:id="@+id/posD5"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#FFFFFF" />
-
-            <ImageButton
-                android:id="@+id/posE5"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#5A5A5A" />
-
-            <ImageButton
-                android:id="@+id/posF5"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#FFFFFF" />
-
-            <ImageButton
-                android:id="@+id/posG5"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#5A5A5A" />
-
-            <ImageButton
-                android:id="@+id/posH5"
+                android:id="@+id/pos17"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -455,56 +329,56 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/posA4"
+                android:id="@+id/pos20"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/posB4"
+                android:id="@+id/pos21"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/posC4"
+                android:id="@+id/pos22"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/posD4"
+                android:id="@+id/pos23"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/posE4"
+                android:id="@+id/pos24"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/posF4"
+                android:id="@+id/pos25"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/posG4"
+                android:id="@+id/pos26"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/posH4"
+                android:id="@+id/pos27"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -518,56 +392,182 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/posA3"
+                android:id="@+id/pos30"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/posB3"
+                android:id="@+id/pos31"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/posC3"
+                android:id="@+id/pos32"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/posD3"
+                android:id="@+id/pos33"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/posE3"
+                android:id="@+id/pos34"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/posF3"
+                android:id="@+id/pos35"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/posG3"
+                android:id="@+id/pos36"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/posH3"
+                android:id="@+id/pos37"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/pos40"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFFFFF" />
+
+            <ImageButton
+                android:id="@+id/pos41"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#5A5A5A" />
+
+            <ImageButton
+                android:id="@+id/pos42"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFFFFF" />
+
+            <ImageButton
+                android:id="@+id/pos43"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#5A5A5A" />
+
+            <ImageButton
+                android:id="@+id/pos44"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFFFFF" />
+
+            <ImageButton
+                android:id="@+id/pos45"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#5A5A5A" />
+
+            <ImageButton
+                android:id="@+id/pos46"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFFFFF" />
+
+            <ImageButton
+                android:id="@+id/pos47"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#5A5A5A" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/pos50"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#5A5A5A" />
+
+            <ImageButton
+                android:id="@+id/pos51"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFFFFF" />
+
+            <ImageButton
+                android:id="@+id/pos52"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#5A5A5A" />
+
+            <ImageButton
+                android:id="@+id/pos53"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFFFFF" />
+
+            <ImageButton
+                android:id="@+id/pos54"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#5A5A5A" />
+
+            <ImageButton
+                android:id="@+id/pos55"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFFFFF" />
+
+            <ImageButton
+                android:id="@+id/pos56"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#5A5A5A" />
+
+            <ImageButton
+                android:id="@+id/pos57"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -582,56 +582,56 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/posA2"
+                android:id="@+id/pos60"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/posB2"
+                android:id="@+id/pos61"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/posC2"
+                android:id="@+id/pos62"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/posD2"
+                android:id="@+id/pos63"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/posE2"
+                android:id="@+id/pos64"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/posF2"
+                android:id="@+id/pos65"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/posG2"
+                android:id="@+id/pos66"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/posH2"
+                android:id="@+id/pos67"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -646,56 +646,56 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/posA1"
+                android:id="@+id/pos70"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/posB1"
+                android:id="@+id/pos71"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/posC1"
+                android:id="@+id/pos72"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/posD1"
+                android:id="@+id/pos73"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/posE1"
+                android:id="@+id/pos74"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/posF1"
+                android:id="@+id/pos75"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FFFFFF" />
 
             <ImageButton
-                android:id="@+id/posG1"
+                android:id="@+id/pos76"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#5A5A5A" />
 
             <ImageButton
-                android:id="@+id/posH1"
+                android:id="@+id/pos77"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -803,11 +803,11 @@
 
         <TextView
             android:id="@+id/notacaoLeft8"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="8" />
+            android:text="1" />
 
         <TextView
             android:id="@+id/notacaoLeft7"
@@ -815,7 +815,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="7" />
+            android:text="2" />
 
         <TextView
             android:id="@+id/notacaoLeft6"
@@ -823,7 +823,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="6" />
+            android:text="3" />
 
         <TextView
             android:id="@+id/notacaoLeft5"
@@ -831,7 +831,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="5" />
+            android:text="4" />
 
         <TextView
             android:id="@+id/notacaoLeft4"
@@ -839,7 +839,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="4" />
+            android:text="5" />
 
         <TextView
             android:id="@+id/notacaoLeft3"
@@ -847,7 +847,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="3" />
+            android:text="6" />
 
         <TextView
             android:id="@+id/notacaoLeft2"
@@ -855,7 +855,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="2" />
+            android:text="7" />
 
         <TextView
             android:id="@+id/notacaoLeft1"
@@ -863,7 +863,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="1" />
+            android:text="8" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

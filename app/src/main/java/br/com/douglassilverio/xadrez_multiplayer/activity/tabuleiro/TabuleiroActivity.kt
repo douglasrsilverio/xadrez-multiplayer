@@ -8,7 +8,7 @@ import br.com.douglassilverio.xadrez_multiplayer.presenter.tabuleiro.ITabuleiroP
 import br.com.douglassilverio.xadrez_multiplayer.presenter.tabuleiro.TabuleiroPresenter
 
 
-class TabuleiroActivity : AppCompatActivity(){
+class TabuleiroActivity : ITabuleiroActivity, AppCompatActivity(){
 
 
     private lateinit var tabuleiroPresenter: ITabuleiroPresenter
@@ -20,26 +20,30 @@ class TabuleiroActivity : AppCompatActivity(){
     }
 
     private fun loadView(){
-        tabuleiroPresenter = TabuleiroPresenter(this, this)
+        tabuleiroPresenter = TabuleiroPresenter( this)
     }
 
-    fun mudarDestaquePos(btSelecionado: View, cor: Int){
+    override fun mudarDestaquePos(btSelecionado: View, cor: Int){
         btSelecionado.setBackgroundColor(cor)
    }
+
+    override fun getViewById(idView:Int):View{
+        return findViewById(idView)
+    }
 
     fun moverPeca(peca: View, posX: Int, posY: Int){
 
     }
 
-    fun posA8(btA8: View){
+    fun pos00(btA8: View){
         tabuleiroPresenter.recebeAcao(btA8)
     }
 
-    fun posB8(btB8: View){
+    fun pos01(btB8: View){
         tabuleiroPresenter.recebeAcao(btB8)
     }
 
-    fun posC8(btC8: View){
+    fun pos02(btC8: View){
         tabuleiroPresenter.recebeAcao(btC8)
     }
 }
