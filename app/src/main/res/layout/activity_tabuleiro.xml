@@ -16,7 +16,7 @@
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout12"
+        app:layout_constraintBottom_toTopOf="@+id/coluna0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -100,7 +100,7 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout12"
+        app:layout_constraintStart_toEndOf="@+id/coluna0"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
@@ -169,7 +169,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout12"
+        android:id="@+id/coluna0"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="24dp"
@@ -185,6 +185,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
+            android:id="@+id/linha0"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -259,6 +260,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linha1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -323,6 +325,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linha2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -386,6 +389,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linha3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -449,6 +453,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linha4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -512,6 +517,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linha5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -576,6 +582,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linha6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -640,6 +647,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linha7"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -717,7 +725,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout12">
+        app:layout_constraintTop_toBottomOf="@+id/coluna0">
 
         <TextView
             android:id="@+id/notacaoDownA"
@@ -797,7 +805,7 @@
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/linearLayout12"
+        app:layout_constraintEnd_toStartOf="@+id/coluna0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 

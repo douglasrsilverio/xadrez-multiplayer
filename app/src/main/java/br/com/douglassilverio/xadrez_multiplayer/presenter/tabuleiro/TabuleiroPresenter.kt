@@ -6,11 +6,11 @@ import android.view.View
 import br.com.douglassilverio.xadrez_multiplayer.activity.tabuleiro.ITabuleiroActivity
 import br.com.douglassilverio.xadrez_multiplayer.model.EstadoPosicao
 import br.com.douglassilverio.xadrez_multiplayer.model.Jogador
-import br.com.douglassilverio.xadrez_multiplayer.model.PosicoesPecasTabuleiro
+import br.com.douglassilverio.xadrez_multiplayer.model.PosicoesTabuleiro
 
 class TabuleiroPresenter(private var viewTabuleiroActivity: ITabuleiroActivity) : ITabuleiroPresenter{
 
-    var posicoesPecasTabuleiro = PosicoesPecasTabuleiro(viewTabuleiroActivity)
+    var posicoesPecasTabuleiro = PosicoesTabuleiro(viewTabuleiroActivity)
     var jogador = Jogador()
 
     private var estadoPosicao: EstadoPosicao = EstadoPosicao()

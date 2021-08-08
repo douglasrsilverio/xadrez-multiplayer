@@ -9,7 +9,7 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
-class PosicoesPecasTabuleiroTest {
+class PosicoesTabuleiroTest {
 
     var posicao = Posicao(null,null, null, null)
     var tabuleiroPosicoes: Array<Array<Posicao>> = Array(7) {Array(7) {posicao} }
