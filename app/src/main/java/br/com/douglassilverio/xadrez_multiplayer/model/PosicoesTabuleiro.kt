@@ -26,7 +26,7 @@ class PosicoesTabuleiro(private var viewTabuleiroActivity: ITabuleiroActivity) {
     private fun mapTabuleiroToArray2D(){
         val listaIds = findAllIdsFromViewsInto2DLinearLayout()
         val listaViews = findAllViewsFromIdListAndInsertIntoArray(listaIds)
-        mapArrayDeViewsToAray2D(listaViews)
+        insertViewsFromArrayViewIntoObjectAndMapToArray2D(listaViews)
     }
 
     private fun findAllIdsFromViewsInto2DLinearLayout(): ArrayList<Int>{
@@ -50,7 +50,7 @@ class PosicoesTabuleiro(private var viewTabuleiroActivity: ITabuleiroActivity) {
         return arrayView
     }
 
-    private fun mapArrayDeViewsToAray2D(arrayViews: Array<View?>){
+    private fun insertViewsFromArrayViewIntoObjectAndMapToArray2D(arrayViews: Array<View?>){
         var linhaContador = 0
         var colunaContador = 0
         var arrayViewContador = 0
