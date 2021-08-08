@@ -4,7 +4,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
-class ConfiguracoesTabuleiroTest {
+class ConfiguraTabuleiroTest {
 /*
     var posicao = Posicao(null,null, null, null)
     var tabuleiroPosicoes: Array<Array<Posicao>> = Array(7) {Array(7) {posicao} }

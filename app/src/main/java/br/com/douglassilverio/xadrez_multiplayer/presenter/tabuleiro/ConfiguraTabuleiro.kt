@@ -11,17 +11,17 @@ import br.com.douglassilverio.xadrez_multiplayer.model.pecas.IPecas
 import br.com.douglassilverio.xadrez_multiplayer.model.pecas.Torre
 import br.com.douglassilverio.xadrez_multiplayer.util.Constantes
 
-class ConfiguracoesTabuleiro(private var viewTabuleiroActivity: ITabuleiroActivity) {
+class ConfiguraTabuleiro(private var viewTabuleiroActivity: ITabuleiroActivity) {
 
     private lateinit var tabuleiroArray2D: Array<Array<PosicaoDto?>>
 
     init {
         mapTabuleiroToArray2D()
-        inserirPecasIniciaisJogadorUm(Constantes.BRANCAS.text()) //Randomizar
+        inserirPecasIniciaisJogadorUm(Constantes.BRANCAS.text()) //Pegar cor de um objeto do tipo Jogador passado como parâmetro no construtor, cor deve ser random
         printPosicoesTabuleiro()
     }
 
-    private fun printPosicoesTabuleiro() {
+    fun printPosicoesTabuleiro() {
         val posicoes = " \n" + tabuleiroArray2D.contentDeepToString()
         Log.i(Constantes.TABULEIRO.text(), posicoes.split("],").joinToString("\n"))
     }
@@ -92,5 +92,9 @@ class ConfiguracoesTabuleiro(private var viewTabuleiroActivity: ITabuleiroActivi
         var posicao00:PosicaoDto? = tabuleiroArray2D[0][0]
         posicao00?.peca = torreBranca
         tabuleiroArray2D[0][0] = posicao00
+    }
+
+    fun getTabuleiroArray2D():Array<Array<PosicaoDto?>> {
+        return this.tabuleiroArray2D
     }
 }
