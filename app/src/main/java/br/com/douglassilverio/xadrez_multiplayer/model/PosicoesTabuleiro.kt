@@ -20,7 +20,7 @@ class PosicoesTabuleiro(private var viewTabuleiroActivity: ITabuleiroActivity) {
 
     private fun inicializarArray2DVazio(){
         tabuleiroArray2D = Array(Constantes.TOTAL_POSICOES_COLUNA.valor){
-            arrayOfNulls<Posicao>(8)
+            arrayOfNulls<Posicao>(Constantes.TOTAL_POSICOES_LINHA.valor)
             }
     }
 
