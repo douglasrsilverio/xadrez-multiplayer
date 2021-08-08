@@ -10,15 +10,18 @@ import br.com.douglassilverio.xadrez_multiplayer.util.Constantes
 
 class PosicoesTabuleiro(private var viewTabuleiroActivity: ITabuleiroActivity) {
 
-    private var posicao:Posicao = Posicao(null, null, null, null)
-    private var tabuleiroArray2D: Array<Array<Posicao>> =
-        Array(Constantes.TOTAL_POSICOES_COLUNA.valor) {
-            Array(Constantes.TOTAL_POSICOES_LINHA.valor) {
-                posicao } }
+    private lateinit var tabuleiroArray2D: Array<Array<Posicao?>>
 
     init {
+        inicializarArray2DVazio()
         mapTabuleiroToArray2D()
         printPosicoesTabuleiro()
+    }
+
+    private fun inicializarArray2DVazio(){
+        tabuleiroArray2D = Array(Constantes.TOTAL_POSICOES_COLUNA.valor){
+            arrayOfNulls<Posicao>(8)
+            }
     }
 
     private fun printPosicoesTabuleiro() {
@@ -29,7 +32,7 @@ class PosicoesTabuleiro(private var viewTabuleiroActivity: ITabuleiroActivity) {
     private fun mapTabuleiroToArray2D(){
         val listaIds = findAllIdsFromViewsInto2DLinearLayout()
         val listaViews = findAllViewsFromIdListAndInsertIntoArray(listaIds)
-        insertViewsFromArrayViewIntoObjectAndMapToArray2D(listaViews)
+        insertViewsIntoObjectAndMapToArray2D(listaViews)
     }
 
     private fun findAllIdsFromViewsInto2DLinearLayout(): ArrayList<Int>{
@@ -53,7 +56,7 @@ class PosicoesTabuleiro(private var viewTabuleiroActivity: ITabuleiroActivity) {
         return arrayView
     }
 
-    private fun insertViewsFromArrayViewIntoObjectAndMapToArray2D(arrayViews: Array<View?>){
+    private fun insertViewsIntoObjectAndMapToArray2D(arrayViews: Array<View?>){
         var linhaContador = Constantes.INIT_VAR_INT_WITH_ZERO.valor
         var colunaContador = Constantes.INIT_VAR_INT_WITH_ZERO.valor
         var arrayViewContador = Constantes.INIT_VAR_INT_WITH_ZERO.valor
