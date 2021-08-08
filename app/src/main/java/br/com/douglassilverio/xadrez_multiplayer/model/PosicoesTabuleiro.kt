@@ -11,7 +11,10 @@ import br.com.douglassilverio.xadrez_multiplayer.util.Constantes
 class PosicoesTabuleiro(private var viewTabuleiroActivity: ITabuleiroActivity) {
 
     private var posicao:Posicao = Posicao(null, null, null, null)
-    private var tabuleiroArray2D: Array<Array<Posicao>> = Array(8) { Array(8) { posicao } }
+    private var tabuleiroArray2D: Array<Array<Posicao>> =
+        Array(Constantes.TOTAL_POSICOES_COLUNA.valor) {
+            Array(Constantes.TOTAL_POSICOES_LINHA.valor) {
+                posicao } }
 
     init {
         mapTabuleiroToArray2D()
@@ -42,7 +45,7 @@ class PosicoesTabuleiro(private var viewTabuleiroActivity: ITabuleiroActivity) {
     }
 
     private fun findAllViewsFromIdListAndInsertIntoArray(listaIds:List<Int>): Array<View?>{
-        val arrayView: Array<View?> = Array(64) { null }
+        val arrayView: Array<View?> = Array(Constantes.TOTAL_POSICOES_TABULEIRO.valor) { null }
         for((contadorArray) in arrayView.withIndex()) {
             arrayView[contadorArray] =
                 viewTabuleiroActivity.getViewById(listaIds[contadorArray])
@@ -51,9 +54,9 @@ class PosicoesTabuleiro(private var viewTabuleiroActivity: ITabuleiroActivity) {
     }
 
     private fun insertViewsFromArrayViewIntoObjectAndMapToArray2D(arrayViews: Array<View?>){
-        var linhaContador = 0
-        var colunaContador = 0
-        var arrayViewContador = 0
+        var linhaContador = Constantes.INIT_VAR_INT_WITH_ZERO.valor
+        var colunaContador = Constantes.INIT_VAR_INT_WITH_ZERO.valor
+        var arrayViewContador = Constantes.INIT_VAR_INT_WITH_ZERO.valor
 
         for (linha in tabuleiroArray2D)
             for (posicao in linha) {
@@ -61,12 +64,12 @@ class PosicoesTabuleiro(private var viewTabuleiroActivity: ITabuleiroActivity) {
                 arrayViewContador++
                 colunaContador++
 
-                if (colunaContador == 8) {
-                    colunaContador = 0
+                if (colunaContador == Constantes.TOTAL_POSICOES_COLUNA.valor) {
+                    colunaContador = Constantes.INIT_VAR_INT_WITH_ZERO.valor
                     linhaContador++
                 }
 
-                if (linhaContador == 8 && colunaContador == 8)
+                if (linhaContador == Constantes.TOTAL_POSICOES_LINHA.valor && colunaContador == Constantes.TOTAL_POSICOES_COLUNA.valor)
                     return
             }
     }
