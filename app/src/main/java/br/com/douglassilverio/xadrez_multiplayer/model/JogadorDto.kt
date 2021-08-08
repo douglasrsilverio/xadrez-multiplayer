@@ -2,6 +2,6 @@ package br.com.douglassilverio.xadrez_multiplayer.model
 
 import br.com.douglassilverio.xadrez_multiplayer.util.Constantes
 
-class Jogador {
+class JogadorDto {
     var cor = Constantes.BRANCAS
 }

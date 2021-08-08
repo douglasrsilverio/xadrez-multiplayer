@@ -1,15 +1,10 @@
 package br.com.douglassilverio.xadrez_multiplayer
 
-import android.util.Log
-import android.view.View
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import br.com.douglassilverio.xadrez_multiplayer.model.Posicao
-import br.com.douglassilverio.xadrez_multiplayer.util.Constantes
-import org.junit.Test
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
-class PosicoesTabuleiroTest {
+class ConfiguracoesTabuleiroTest {
 /*
     var posicao = Posicao(null,null, null, null)
     var tabuleiroPosicoes: Array<Array<Posicao>> = Array(7) {Array(7) {posicao} }

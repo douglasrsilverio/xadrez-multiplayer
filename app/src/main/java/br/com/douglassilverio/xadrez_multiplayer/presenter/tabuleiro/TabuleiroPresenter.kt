@@ -4,16 +4,18 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.view.View
 import br.com.douglassilverio.xadrez_multiplayer.activity.tabuleiro.ITabuleiroActivity
-import br.com.douglassilverio.xadrez_multiplayer.model.EstadoVisualBotoes
-import br.com.douglassilverio.xadrez_multiplayer.model.Jogador
-import br.com.douglassilverio.xadrez_multiplayer.model.PosicoesTabuleiro
+import br.com.douglassilverio.xadrez_multiplayer.model.EstadoVisualBotoeDto
+import br.com.douglassilverio.xadrez_multiplayer.model.JogadorDto
 
 class TabuleiroPresenter(private var viewTabuleiroActivity: ITabuleiroActivity) : ITabuleiroPresenter{
 
-    var posicoesPecasTabuleiro = PosicoesTabuleiro(viewTabuleiroActivity)
-    var jogador = Jogador()
+    var posicoesPecasTabuleiro =
+        ConfiguracoesTabuleiro(
+            viewTabuleiroActivity
+        )
+    var jogador = JogadorDto()
 
-    private var estadoVisualBotoes: EstadoVisualBotoes = EstadoVisualBotoes()
+    private var estadoVisualBotoeDto: EstadoVisualBotoeDto = EstadoVisualBotoeDto()
 
     override fun recebeAcao(posSelecionada: View){
         tratarSelecaoPosicao(posSelecionada)
@@ -32,8 +34,8 @@ class TabuleiroPresenter(private var viewTabuleiroActivity: ITabuleiroActivity) 
 
     private fun selecionarPeca(posSelecionada: View): Boolean{
         if(getColorBackgroundPos(posSelecionada) != Color.RED ) {//&& jogador.cor == getCorPecaSelecionada(posSelecionada)
-            estadoVisualBotoes.corTileUltimaPos = getColorBackgroundPos(posSelecionada)
-            estadoVisualBotoes.idPosSelecionada = posSelecionada.id
+            estadoVisualBotoeDto.corTileUltimaPos = getColorBackgroundPos(posSelecionada)
+            estadoVisualBotoeDto.idPosSelecionada = posSelecionada.id
             viewTabuleiroActivity.mudarDestaquePos(posSelecionada, Color.RED)
 
             return true
@@ -43,20 +45,20 @@ class TabuleiroPresenter(private var viewTabuleiroActivity: ITabuleiroActivity) 
 
     private fun desselecionarPeca(posSelecionada: View): Boolean{
         if(getColorBackgroundPos(posSelecionada) == Color.RED){
-            viewTabuleiroActivity.mudarDestaquePos(posSelecionada, estadoVisualBotoes.corTileUltimaPos)
-            estadoVisualBotoes.idPosSelecionada = 0
+            viewTabuleiroActivity.mudarDestaquePos(posSelecionada, estadoVisualBotoeDto.corTileUltimaPos)
+            estadoVisualBotoeDto.idPosSelecionada = 0
             return true
         }
         return false
     }
 
     private fun mudarPecaSelecionada(posSelecionada: View): Boolean{
-        if(posSelecionada.id != estadoVisualBotoes.idPosSelecionada && estadoVisualBotoes.idPosSelecionada != 0) {
-            val antigaPosDestacada: View = viewTabuleiroActivity.getViewById(estadoVisualBotoes.idPosSelecionada)
-            viewTabuleiroActivity.mudarDestaquePos(antigaPosDestacada, estadoVisualBotoes.corTileUltimaPos)
+        if(posSelecionada.id != estadoVisualBotoeDto.idPosSelecionada && estadoVisualBotoeDto.idPosSelecionada != 0) {
+            val antigaPosDestacada: View = viewTabuleiroActivity.getViewById(estadoVisualBotoeDto.idPosSelecionada)
+            viewTabuleiroActivity.mudarDestaquePos(antigaPosDestacada, estadoVisualBotoeDto.corTileUltimaPos)
 
-            estadoVisualBotoes.corTileUltimaPos = getColorBackgroundPos(posSelecionada)
-            estadoVisualBotoes.idPosSelecionada = posSelecionada.id
+            estadoVisualBotoeDto.corTileUltimaPos = getColorBackgroundPos(posSelecionada)
+            estadoVisualBotoeDto.idPosSelecionada = posSelecionada.id
             viewTabuleiroActivity.mudarDestaquePos(posSelecionada, Color.RED)
             return true
         }
