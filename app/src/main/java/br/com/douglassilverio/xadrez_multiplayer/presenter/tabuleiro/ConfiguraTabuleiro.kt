@@ -11,7 +11,7 @@ import br.com.douglassilverio.xadrez_multiplayer.model.pecas.IPecas
 import br.com.douglassilverio.xadrez_multiplayer.model.pecas.Torre
 import br.com.douglassilverio.xadrez_multiplayer.util.Constantes
 
-class ConfiguraTabuleiro(private var viewTabuleiroActivity: ITabuleiroActivity) {
+class ConfiguraTabuleiro(private var tabuleiroPresenter: ITabuleiroPresenter) {
 
     private lateinit var tabuleiroArray2D: Array<Array<PosicaoDto?>>
 
@@ -43,7 +43,7 @@ class ConfiguraTabuleiro(private var viewTabuleiroActivity: ITabuleiroActivity) 
     private fun findAllIdsFromViewsInto2DLinearLayout(): ArrayList<Int>{
         val idsTodasPosicoesTabuleiro:ArrayList<Int> = ArrayList()
 
-        val llayoutColuna:LinearLayout = viewTabuleiroActivity.getViewById(R.id.coluna0) as LinearLayout
+        val llayoutColuna:LinearLayout = tabuleiroPresenter.getViewById(R.id.coluna0) as LinearLayout
         llayoutColuna.forEach { linha -> linha as LinearLayout
             linha.forEach {
                     posicao -> idsTodasPosicoesTabuleiro.add(posicao.id)
@@ -56,7 +56,7 @@ class ConfiguraTabuleiro(private var viewTabuleiroActivity: ITabuleiroActivity) 
         val arrayView: Array<View?> = Array(Constantes.TOTAL_POSICOES_TABULEIRO.valor) { null }
         for((contadorArray) in arrayView.withIndex()) {
             arrayView[contadorArray] =
-                viewTabuleiroActivity.getViewById(listaIds[contadorArray])
+                tabuleiroPresenter.getViewById(listaIds[contadorArray])
         }
         return arrayView
     }
@@ -88,8 +88,8 @@ class ConfiguraTabuleiro(private var viewTabuleiroActivity: ITabuleiroActivity) 
     }
 
     private fun inserirPecasIniciaisJogadorUm(corPecasJogador:String){
-        var torreBranca:IPecas = Torre(Constantes.TORRE.text(),  corPecasJogador)
-        var posicao00:PosicaoDto? = tabuleiroArray2D[0][0]
+        val torreBranca:IPecas = Torre(Constantes.TORRE.text(),  corPecasJogador)
+        val posicao00:PosicaoDto? = tabuleiroArray2D[0][0]
         posicao00?.peca = torreBranca
         tabuleiroArray2D[0][0] = posicao00
     }

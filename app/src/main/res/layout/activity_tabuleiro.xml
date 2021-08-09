@@ -201,7 +201,9 @@
                 android:background="#FFFFFF"
                 android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:onClick="pos00"
-                android:src="@drawable/ic_brancas_rainha" />
+                android:src="@drawable/ic_brancas_rainha"
+                android:tag = "0:0"
+                />
 
 
             <ImageButton

@@ -4,7 +4,7 @@ import android.view.View
 import br.com.douglassilverio.xadrez_multiplayer.model.pecas.IPecas
 import br.com.douglassilverio.xadrez_multiplayer.util.Constantes
 
-class PosicaoDto(var peca:IPecas? = null, private var viewPosicao: View? = null, private var linha:Int? = null, private var coluna:Int? = null){
+class PosicaoDto(var peca:IPecas? = null, var viewPosicao: View? = null, private var linha:Int? = null, private var coluna:Int? = null){
 
     override fun toString(): String {
         var tipoPeca = peca?.getNomePeca() ?: Constantes.POSICAO_VAZIA.text()
