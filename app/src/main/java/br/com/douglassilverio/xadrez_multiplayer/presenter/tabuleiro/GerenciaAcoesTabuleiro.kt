@@ -7,6 +7,7 @@ import br.com.douglassilverio.xadrez_multiplayer.util.Constantes
 
 class GerenciaAcoesTabuleiro(var tabuleiroArray2D:Array<Array<PosicaoDto?>>, var estadoBotoesDto: EstadoBotoesDto, var tabuleiroPresenter: TabuleiroPresenter) {
 
+    //mover essas informacoes para dentro do EstadoBotoesDto apos finalizar implementacoes
     var tagPosicaoSelecionada = ""
     var colunaSelecionada = Constantes.INIT_VAR_POSICAO.valor
     var linhaSelecionada = Constantes.INIT_VAR_POSICAO.valor
@@ -20,7 +21,7 @@ class GerenciaAcoesTabuleiro(var tabuleiroArray2D:Array<Array<PosicaoDto?>>, var
             tagPosicaoSelecionada = ""
             tagPosicaoDestino = ""
 
-        if(estadoBotoesDto.idPosSelecionada == Constantes.NADA_SELECIONADO.valor) {
+        if(estadoBotoesDto.idPosicaoSelecionada == Constantes.NADA_SELECIONADO.valor) {
             tagPosicaoSelecionada = ""
             tagPosicaoDestino = ""
             return
@@ -32,7 +33,7 @@ class GerenciaAcoesTabuleiro(var tabuleiroArray2D:Array<Array<PosicaoDto?>>, var
     }
 
     fun setPosicaoPecaSelecinada(){
-        var viewSelecionadaAtual = tabuleiroPresenter.getViewById(estadoBotoesDto.idPosSelecionada)
+        var viewSelecionadaAtual = tabuleiroPresenter.getViewById(estadoBotoesDto.idPosicaoSelecionada)
         var tagPosicaoSelecionada:String = viewSelecionadaAtual.tag.toString()
 
         val delimitadorString = ":"

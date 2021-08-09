@@ -44,7 +44,7 @@ class TabuleiroPresenter(private var viewTabuleiroActivity: ITabuleiroActivity) 
     private fun destacarPecaSelecionada(posSelecionada: View): Boolean{
         if(getColorBackgroundPos(posSelecionada) != Color.RED ) {//&& jogador.cor == getCorPecaSelecionada(posSelecionada)
             estadoBotoesDto.corTileUltimaPos = getColorBackgroundPos(posSelecionada)
-            estadoBotoesDto.idPosSelecionada = posSelecionada.id
+            estadoBotoesDto.idPosicaoSelecionada = posSelecionada.id
             viewTabuleiroActivity.mudarDestaquePos(posSelecionada, Color.RED)
 
             return true
@@ -55,19 +55,19 @@ class TabuleiroPresenter(private var viewTabuleiroActivity: ITabuleiroActivity) 
     private fun removerDestaqueifPecaSelecionadaJaDestacada(posSelecionada: View): Boolean{
         if(getColorBackgroundPos(posSelecionada) == Color.RED){
             viewTabuleiroActivity.mudarDestaquePos(posSelecionada, estadoBotoesDto.corTileUltimaPos)
-            estadoBotoesDto.idPosSelecionada = 0
+            estadoBotoesDto.idPosicaoSelecionada = 0
             return true
         }
         return false
     }
 
     private fun mudarDestaqueAtualParaNovaPecaSelecionada(posSelecionada: View): Boolean{
-        if(posSelecionada.id != estadoBotoesDto.idPosSelecionada && estadoBotoesDto.idPosSelecionada != 0) {
-            val antigaPosDestacada: View = viewTabuleiroActivity.getViewById(estadoBotoesDto.idPosSelecionada)
+        if(posSelecionada.id != estadoBotoesDto.idPosicaoSelecionada && estadoBotoesDto.idPosicaoSelecionada != 0) {
+            val antigaPosDestacada: View = viewTabuleiroActivity.getViewById(estadoBotoesDto.idPosicaoSelecionada)
             viewTabuleiroActivity.mudarDestaquePos(antigaPosDestacada, estadoBotoesDto.corTileUltimaPos)
 
             estadoBotoesDto.corTileUltimaPos = getColorBackgroundPos(posSelecionada)
-            estadoBotoesDto.idPosSelecionada = posSelecionada.id
+            estadoBotoesDto.idPosicaoSelecionada = posSelecionada.id
             viewTabuleiroActivity.mudarDestaquePos(posSelecionada, Color.RED)
             return true
         }
