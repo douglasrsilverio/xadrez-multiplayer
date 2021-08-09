@@ -37,6 +37,8 @@ class TabuleiroPresenter(private var viewTabuleiroActivity: ITabuleiroActivity) 
 
         if(removerDestaqueifPecaSelecionadaJaDestacada(posSelecionada))
             return
+
+        //if jogada realizada foi válida remover destaque
     }
 
     private fun destacarPecaSelecionada(posSelecionada: View): Boolean{

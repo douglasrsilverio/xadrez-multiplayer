@@ -7,28 +7,49 @@ import br.com.douglassilverio.xadrez_multiplayer.util.Constantes
 
 class GerenciaAcoesTabuleiro(var tabuleiroArray2D:Array<Array<PosicaoDto?>>, var estadoBotoesDto: EstadoBotoesDto, var tabuleiroPresenter: TabuleiroPresenter) {
 
+    var tagPosicaoSelecionada = ""
     var colunaSelecionada = Constantes.INIT_VAR_POSICAO.valor
     var linhaSelecionada = Constantes.INIT_VAR_POSICAO.valor
+
+    var tagPosicaoDestino = ""
     var colunaDestino = Constantes.INIT_VAR_POSICAO.valor
     var linhaDestino = Constantes.INIT_VAR_POSICAO.valor
 
     fun tratarMovimento(posSelecionada: View){
-        if(estadoBotoesDto.idPosSelecionada == Constantes.NADA_SELECIONADO.valor)
-            return
+        if(tagPosicaoSelecionada != "" && tagPosicaoDestino != "")
+            tagPosicaoSelecionada = ""
+            tagPosicaoDestino = ""
 
-        setaPosicaoSelecinada()
+        if(estadoBotoesDto.idPosSelecionada == Constantes.NADA_SELECIONADO.valor) {
+            tagPosicaoSelecionada = ""
+            tagPosicaoDestino = ""
+            return
+        }
+
+        setPosicaoPecaSelecinada()
 
         var posicaoSelecionadaNoArray2D = tabuleiroArray2D[colunaSelecionada][linhaSelecionada]
     }
 
-    fun setaPosicaoSelecinada(){
+    fun setPosicaoPecaSelecinada(){
         var viewSelecionadaAtual = tabuleiroPresenter.getViewById(estadoBotoesDto.idPosSelecionada)
-        var tagComPosicaoSelecionada:String = viewSelecionadaAtual.tag.toString()
+        var tagPosicaoSelecionada:String = viewSelecionadaAtual.tag.toString()
 
         val delimitadorString = ":"
-        var posicaoColunaLinhaSelecionada = tagComPosicaoSelecionada.split(delimitadorString)
+        var posicaoColunaLinhaSelecionada = tagPosicaoSelecionada.split(delimitadorString)
 
         colunaSelecionada = posicaoColunaLinhaSelecionada[0].toInt()
         linhaSelecionada = posicaoColunaLinhaSelecionada[1].toInt()
+
+        if(tagPosicaoSelecionada != this.tagPosicaoSelecionada && this.tagPosicaoSelecionada != "") {
+            this.tagPosicaoDestino = tagPosicaoSelecionada
+            return
+        }
+
+        this.tagPosicaoSelecionada = tagPosicaoSelecionada
+    }
+
+    fun setPosicaoDestino(){
+
     }
 }
