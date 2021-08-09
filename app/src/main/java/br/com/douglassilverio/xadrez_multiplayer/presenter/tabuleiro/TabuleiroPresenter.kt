@@ -23,7 +23,7 @@ class TabuleiroPresenter(private var viewTabuleiroActivity: ITabuleiroActivity) 
 
     override fun recebeAcao(posSelecionada: View){
         tratarDestaqueVisualPosicaoSelecionada(posSelecionada)
-        gerenciaAcoesTabuleiro.tratarAcao(posSelecionada)
+        gerenciaAcoesTabuleiro.tratarMovimento(posSelecionada)
         configuraTabuleiro.printPosicoesTabuleiro()
     }
 
