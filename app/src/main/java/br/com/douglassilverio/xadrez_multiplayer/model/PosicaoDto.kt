@@ -17,6 +17,10 @@ class PosicaoDto(var peca:IPecas? = null, var viewPosicao: View? = null, private
 
         return "$coluna$linha$corTipoPeca"
     }
+
+    fun removerPeca(){
+        peca = null
+    }
 }
 
 

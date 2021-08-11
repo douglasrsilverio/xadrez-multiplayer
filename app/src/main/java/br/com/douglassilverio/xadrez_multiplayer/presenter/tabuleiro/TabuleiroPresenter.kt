@@ -11,48 +11,53 @@ class TabuleiroPresenter(private var viewTabuleiroActivity: ITabuleiroActivity) 
 
     private var estadoBotoesDto = EstadoBotoesDto()
     var configuraTabuleiro = ConfiguraTabuleiro(this)
-    private var gerenciaAcoesTabuleiro:GerenciaAcoesTabuleiro
+    private var estadoBotoesTabuleiro:EstadoBotoesTabuleiro
     var jogador = JogadorDto()
 
     init {
         val tabuleiroArray2D = configuraTabuleiro.getTabuleiroArray2D()
-        gerenciaAcoesTabuleiro = GerenciaAcoesTabuleiro(tabuleiroArray2D, estadoBotoesDto, this)
+        estadoBotoesTabuleiro = EstadoBotoesTabuleiro(tabuleiroArray2D, estadoBotoesDto, this)
     }
 
-
-
     override fun recebeAcao(posSelecionada: View){
-        tratarDestaqueVisualPosicaoSelecionada(posSelecionada)
-        gerenciaAcoesTabuleiro.tratarMovimento(posSelecionada)
+        tratarAcao(posSelecionada)
+
+        estadoBotoesTabuleiro.executarAcao(posSelecionada)
         configuraTabuleiro.printPosicoesTabuleiro()
     }
 
 
-    private fun tratarDestaqueVisualPosicaoSelecionada(posSelecionada: View) {
-        if(mudarDestaqueAtualParaNovaPecaSelecionada(posSelecionada))
+    private fun tratarAcao(posSelecionada: View) {
+        if(alterarPecaSelecionada(posSelecionada))
             return
 
-        if(destacarPecaSelecionada(posSelecionada))
+        if(selecionarPeca(posSelecionada)){
             return
+        }
 
-        if(removerDestaqueifPecaSelecionadaJaDestacada(posSelecionada))
+        if(desselecionarPeca(posSelecionada)){
             return
+        }
+
 
         //if jogada realizada foi válida remover destaque
     }
 
-    private fun destacarPecaSelecionada(posSelecionada: View): Boolean{
+    private fun selecionarPeca(posSelecionada: View): Boolean{
         if(getColorBackgroundPos(posSelecionada) != Color.RED ) {//&& jogador.cor == getCorPecaSelecionada(posSelecionada)
             estadoBotoesDto.corTileUltimaPos = getColorBackgroundPos(posSelecionada)
             estadoBotoesDto.idPosicaoSelecionada = posSelecionada.id
             viewTabuleiroActivity.mudarDestaquePos(posSelecionada, Color.RED)
 
+            estadoBotoesTabuleiro.setPosicaoPecaSelecinada()
             return true
         }
         return false
     }
 
-    private fun removerDestaqueifPecaSelecionadaJaDestacada(posSelecionada: View): Boolean{
+    private fun desselecionarPeca(posSelecionada: View): Boolean{
+        estadoBotoesTabuleiro.setPosicaoPecaSelecinada()
+
         if(getColorBackgroundPos(posSelecionada) == Color.RED){
             viewTabuleiroActivity.mudarDestaquePos(posSelecionada, estadoBotoesDto.corTileUltimaPos)
             estadoBotoesDto.idPosicaoSelecionada = 0
@@ -61,7 +66,7 @@ class TabuleiroPresenter(private var viewTabuleiroActivity: ITabuleiroActivity) 
         return false
     }
 
-    private fun mudarDestaqueAtualParaNovaPecaSelecionada(posSelecionada: View): Boolean{
+    private fun alterarPecaSelecionada(posSelecionada: View): Boolean{
         if(posSelecionada.id != estadoBotoesDto.idPosicaoSelecionada && estadoBotoesDto.idPosicaoSelecionada != 0) {
             val antigaPosDestacada: View = viewTabuleiroActivity.getViewById(estadoBotoesDto.idPosicaoSelecionada)
             viewTabuleiroActivity.mudarDestaquePos(antigaPosDestacada, estadoBotoesDto.corTileUltimaPos)
@@ -72,6 +77,14 @@ class TabuleiroPresenter(private var viewTabuleiroActivity: ITabuleiroActivity) 
             return true
         }
         return false
+    }
+
+    override fun moverPeca(posicaoViewSelecionada:Int, posicaoDestinoDaViewSelecionada:Int){
+
+    }
+
+    override fun setImagemPeca(view: View?, idImagem:Int) {
+        viewTabuleiroActivity.setImagemPeca(view, idImagem)
     }
 
     private fun getColorBackgroundPos(posSelecionada: View) : Int {

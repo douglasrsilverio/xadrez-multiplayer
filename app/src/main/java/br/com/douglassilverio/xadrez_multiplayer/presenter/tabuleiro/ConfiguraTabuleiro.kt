@@ -92,6 +92,7 @@ class ConfiguraTabuleiro(private var tabuleiroPresenter: ITabuleiroPresenter) {
         val posicao00:PosicaoDto? = tabuleiroArray2D[0][0]
         posicao00?.peca = torreBranca
         tabuleiroArray2D[0][0] = posicao00
+        tabuleiroPresenter.setImagemPeca(posicao00?.viewPosicao, R.drawable.ic_brancas_torre)
     }
 
     fun getTabuleiroArray2D():Array<Array<PosicaoDto?>> {

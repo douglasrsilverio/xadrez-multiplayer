@@ -2,6 +2,7 @@ package br.com.douglassilverio.xadrez_multiplayer.activity.tabuleiro
 
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import br.com.douglassilverio.xadrez_multiplayer.R
 import br.com.douglassilverio.xadrez_multiplayer.presenter.tabuleiro.ITabuleiroPresenter
@@ -31,8 +32,9 @@ class TabuleiroActivity : ITabuleiroActivity, AppCompatActivity(){
         return findViewById(idView)
     }
 
-    fun moverPeca(peca: View, posX: Int, posY: Int){
-
+    override fun setImagemPeca(view: View?, idImagem:Int){
+        view as ImageButton
+        view.setImageResource(idImagem)
     }
 
     fun pos00(btA8: View){
