@@ -5,7 +5,6 @@ import android.view.View
 import android.widget.LinearLayout
 import androidx.core.view.forEach
 import br.com.douglassilverio.xadrez_multiplayer.R
-import br.com.douglassilverio.xadrez_multiplayer.activity.tabuleiro.ITabuleiroActivity
 import br.com.douglassilverio.xadrez_multiplayer.model.PosicaoDto
 import br.com.douglassilverio.xadrez_multiplayer.model.pecas.IPecas
 import br.com.douglassilverio.xadrez_multiplayer.model.pecas.Torre
@@ -17,13 +16,13 @@ class ConfiguraTabuleiro(private var tabuleiroPresenter: ITabuleiroPresenter) {
 
     init {
         mapTabuleiroToArray2D()
-        inserirPecasIniciaisJogadorUm(Constantes.BRANCAS.text()) //Pegar cor de um objeto do tipo Jogador passado como parâmetro no construtor, cor deve ser random
+        inserirPecasIniciaisJogadorUm(Constantes.BRANCAS.toString()) //Pegar cor de um objeto do tipo Jogador passado como parâmetro no construtor, cor deve ser random
         printPosicoesTabuleiro()
     }
 
     fun printPosicoesTabuleiro() {
         val posicoes = " \n" + tabuleiroArray2D.contentDeepToString()
-        Log.i(Constantes.TABULEIRO.text(), posicoes.split("],").joinToString("\n"))
+        Log.i(Constantes.TABULEIRO.toString(), posicoes.split("],").joinToString("\n"))
     }
 
     private fun inicializarArray2DVazio(){
@@ -88,7 +87,7 @@ class ConfiguraTabuleiro(private var tabuleiroPresenter: ITabuleiroPresenter) {
     }
 
     private fun inserirPecasIniciaisJogadorUm(corPecasJogador:String){
-        val torreBranca:IPecas = Torre(Constantes.TORRE.text(),  corPecasJogador)
+        val torreBranca:IPecas = Torre(Constantes.TORRE.toString(),  corPecasJogador, R.drawable.ic_brancas_torre)
         val posicao00:PosicaoDto? = tabuleiroArray2D[0][0]
         posicao00?.peca = torreBranca
         tabuleiroArray2D[0][0] = posicao00

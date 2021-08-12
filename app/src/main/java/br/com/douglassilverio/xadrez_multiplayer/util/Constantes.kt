@@ -25,7 +25,7 @@ enum class Constantes(var valor:Int, var descricao: String) {
     REI(0, "R"),
     RAINHA(0, "Q");
 
-    fun text(): String {
+    override fun toString(): String {
         return this.descricao
     }
 

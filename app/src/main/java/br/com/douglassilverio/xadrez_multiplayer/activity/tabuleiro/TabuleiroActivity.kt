@@ -32,9 +32,9 @@ class TabuleiroActivity : ITabuleiroActivity, AppCompatActivity(){
         return findViewById(idView)
     }
 
-    override fun setImagemPeca(view: View?, idImagem:Int){
+    override fun setImagemPeca(view: View?, idImagem: Int?){
         view as ImageButton
-        view.setImageResource(idImagem)
+        view.setImageResource(idImagem!!)
     }
 
     fun pos00(btA8: View){

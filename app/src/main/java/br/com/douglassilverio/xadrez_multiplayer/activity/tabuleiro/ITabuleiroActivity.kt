@@ -5,5 +5,5 @@ import android.view.View
 interface ITabuleiroActivity {
     fun getViewById(idView:Int): View
     fun mudarDestaquePos(btSelecionado: View, cor: Int)
-    fun setImagemPeca(view: View?, idImagem:Int)
+    fun setImagemPeca(view: View?, idImagem: Int?)
 }

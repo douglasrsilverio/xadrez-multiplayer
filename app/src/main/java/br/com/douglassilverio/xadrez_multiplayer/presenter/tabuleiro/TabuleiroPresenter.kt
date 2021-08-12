@@ -9,20 +9,23 @@ import br.com.douglassilverio.xadrez_multiplayer.model.JogadorDto
 
 class TabuleiroPresenter(private var viewTabuleiroActivity: ITabuleiroActivity) : ITabuleiroPresenter{
 
+    //remover destaque após efetuar movimento
+    //tratar problema ao converter tag
+
     private var estadoBotoesDto = EstadoBotoesDto()
     var configuraTabuleiro = ConfiguraTabuleiro(this)
-    private var estadoBotoesTabuleiro:EstadoBotoesTabuleiro
+    private var gerenciaMovimentosPecas:GerenciaMovimentosPecas
     var jogador = JogadorDto()
 
     init {
         val tabuleiroArray2D = configuraTabuleiro.getTabuleiroArray2D()
-        estadoBotoesTabuleiro = EstadoBotoesTabuleiro(tabuleiroArray2D, estadoBotoesDto, this)
+        gerenciaMovimentosPecas = GerenciaMovimentosPecas(tabuleiroArray2D, estadoBotoesDto, this)
     }
 
     override fun recebeAcao(posSelecionada: View){
         tratarAcao(posSelecionada)
 
-        estadoBotoesTabuleiro.executarAcao(posSelecionada)
+        gerenciaMovimentosPecas.executarAcao()
         configuraTabuleiro.printPosicoesTabuleiro()
     }
 
@@ -49,14 +52,14 @@ class TabuleiroPresenter(private var viewTabuleiroActivity: ITabuleiroActivity) 
             estadoBotoesDto.idPosicaoSelecionada = posSelecionada.id
             viewTabuleiroActivity.mudarDestaquePos(posSelecionada, Color.RED)
 
-            estadoBotoesTabuleiro.setPosicaoPecaSelecinada()
+            gerenciaMovimentosPecas.setPosicaoPecaSelecionada()
             return true
         }
         return false
     }
 
     private fun desselecionarPeca(posSelecionada: View): Boolean{
-        estadoBotoesTabuleiro.setPosicaoPecaSelecinada()
+        gerenciaMovimentosPecas.setPosicaoPecaSelecionada()
 
         if(getColorBackgroundPos(posSelecionada) == Color.RED){
             viewTabuleiroActivity.mudarDestaquePos(posSelecionada, estadoBotoesDto.corTileUltimaPos)
@@ -83,7 +86,7 @@ class TabuleiroPresenter(private var viewTabuleiroActivity: ITabuleiroActivity) 
 
     }
 
-    override fun setImagemPeca(view: View?, idImagem:Int) {
+    override fun setImagemPeca(view: View?, idImagem: Int?) {
         viewTabuleiroActivity.setImagemPeca(view, idImagem)
     }
 
