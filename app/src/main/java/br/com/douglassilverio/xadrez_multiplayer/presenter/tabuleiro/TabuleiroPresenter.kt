@@ -26,7 +26,7 @@ class TabuleiroPresenter(private var viewTabuleiroActivity: ITabuleiroActivity) 
         tratarAcao(posSelecionada)
 
         gerenciaMovimentosPecas.executarAcao()
-        configuraTabuleiro.printPosicoesTabuleiro()
+        configuraTabuleiro.logPosicoesTabuleiro()
     }
 
 
@@ -58,10 +58,10 @@ class TabuleiroPresenter(private var viewTabuleiroActivity: ITabuleiroActivity) 
         return false
     }
 
-    private fun desselecionarPeca(posSelecionada: View): Boolean{
+    override fun desselecionarPeca(posSelecionada: View?): Boolean{
         gerenciaMovimentosPecas.setPosicaoPecaSelecionada()
 
-        if(getColorBackgroundPos(posSelecionada) == Color.RED){
+        if(getColorBackgroundPos(posSelecionada!!) == Color.RED){
             viewTabuleiroActivity.mudarDestaquePos(posSelecionada, estadoBotoesDto.corTileUltimaPos)
             estadoBotoesDto.idPosicaoSelecionada = 0
             return true

@@ -16,7 +16,7 @@ class GerenciaMovimentosPecas(private var tabuleiroArray2D:Array<Array<PosicaoDt
         if(limpaPosicoesSeNadaSelecionado())
             return
 
-        if(setPosAtualSePosHavePeca())
+        if(setPosAtualIfPosHavePeca())
             return
 
         if(executarMovimentoIfPosicoesPreenchidas())
@@ -40,7 +40,7 @@ class GerenciaMovimentosPecas(private var tabuleiroArray2D:Array<Array<PosicaoDt
         return false
     }
 
-    private fun setPosAtualSePosHavePeca(): Boolean{
+    private fun setPosAtualIfPosHavePeca(): Boolean{
         val posAtual = getArrayPosXY(tagPosAtual)
         if(tabuleiroArray2D[posAtual[1]][posAtual[0]]?.peca != null) {
             setPosicaoPecaSelecionada()
@@ -86,9 +86,10 @@ class GerenciaMovimentosPecas(private var tabuleiroArray2D:Array<Array<PosicaoDt
         val posDestino = getArrayPosXY(tagPosDestino)
         //vazio ou matou a peca do lugar
         tabuleiroArray2D[posDestino[1]][posDestino[0]]?.peca = pecaSelecionada
-        val posicaoDestino = tabuleiroArray2D[posDestino[1]][posDestino[0]]?.viewPosicao //inveter as tags no xml e inverter posicao dos números nos arrays de posicao
+        val posicaoDestino = tabuleiroArray2D[posDestino[1]][posDestino[0]]?.viewPosicao
 
         val pecaSeraMovimentada = tabuleiroArray2D[posDestino[1]][posDestino[0]]?.peca
         tabuleiroPresenter.setImagemPeca(posicaoDestino, pecaSeraMovimentada?.getIdImagemPeca())
+        tabuleiroPresenter.desselecionarPeca(posicaoDestino) //corrigir excesso de ? e !! nas chamadas
     }
 }

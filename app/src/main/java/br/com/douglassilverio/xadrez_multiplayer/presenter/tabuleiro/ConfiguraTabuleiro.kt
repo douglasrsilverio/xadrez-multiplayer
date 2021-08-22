@@ -17,10 +17,10 @@ class ConfiguraTabuleiro(private var tabuleiroPresenter: ITabuleiroPresenter) {
     init {
         mapTabuleiroToArray2D()
         inserirPecasIniciaisJogadorUm(Constantes.BRANCAS.toString()) //Pegar cor de um objeto do tipo Jogador passado como parâmetro no construtor, cor deve ser random
-        printPosicoesTabuleiro()
+        logPosicoesTabuleiro()
     }
 
-    fun printPosicoesTabuleiro() {
+    fun logPosicoesTabuleiro() {
         val posicoes = " \n" + tabuleiroArray2D.contentDeepToString()
         Log.i(Constantes.TABULEIRO.toString(), posicoes.split("],").joinToString("\n"))
     }
