@@ -12,8 +12,8 @@ class GerenciaMovimentosPecas(private var tabuleiroArray2D:Array<Array<PosicaoDt
     private var tagPosAtual = ""
     private var tagPosDestino = ""
 
-    fun executarAcao() {
-        if(limpaPosicoesSeNadaSelecionado())
+    fun executarAcao() { //corrigir seleção de peca caso haja outra casa selecionada, seleção não ocorre
+        if(limparPosicoesIfNadaSelecionado())
             return
 
         if(setPosAtualIfPosHavePeca())
@@ -21,8 +21,6 @@ class GerenciaMovimentosPecas(private var tabuleiroArray2D:Array<Array<PosicaoDt
 
         if(executarMovimentoIfPosicoesPreenchidas())
             return
-
-        Log.i(Constantes.TABULEIRO.toString(), "$tagPosAtual | $tagPosDestino")
     }
 
     private fun getArrayPosXY(tag:String):List<Int>{
@@ -31,7 +29,7 @@ class GerenciaMovimentosPecas(private var tabuleiroArray2D:Array<Array<PosicaoDt
         return posicaoStr.map { it.toInt() }
     }
 
-    private fun limpaPosicoesSeNadaSelecionado():Boolean{
+    private fun limparPosicoesIfNadaSelecionado():Boolean{
         if(estadoBotoesDto.idPosicaoSelecionada == Constantes.NADA_SELECIONADO.valor) {
             tagPosAtual = ""
             tagPosDestino = ""
@@ -46,6 +44,7 @@ class GerenciaMovimentosPecas(private var tabuleiroArray2D:Array<Array<PosicaoDt
             setPosicaoPecaSelecionada()
             return false
         }
+
         return true
     }
 
@@ -72,8 +71,6 @@ class GerenciaMovimentosPecas(private var tabuleiroArray2D:Array<Array<PosicaoDt
     }
 
     private fun moverPeca(){
-        Log.i(Constantes.TABULEIRO.toString(), "$tagPosAtual | $tagPosDestino")
-
         val posAtual = getArrayPosXY(tagPosAtual)
         val posSelecionada = tabuleiroArray2D[posAtual[1]][posAtual[0]]
         val pecaSelecionada = posSelecionada?.peca
@@ -91,5 +88,7 @@ class GerenciaMovimentosPecas(private var tabuleiroArray2D:Array<Array<PosicaoDt
         val pecaSeraMovimentada = tabuleiroArray2D[posDestino[1]][posDestino[0]]?.peca
         tabuleiroPresenter.setImagemPeca(posicaoDestino, pecaSeraMovimentada?.getIdImagemPeca())
         tabuleiroPresenter.desselecionarPeca(posicaoDestino) //corrigir excesso de ? e !! nas chamadas
+
+        Log.i(Constantes.TABULEIRO.toString(), "Pós jogada: $tagPosAtual | $tagPosDestino")
     }
 }
