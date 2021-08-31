@@ -61,9 +61,9 @@ class ConfiguraTabuleiro(private var tabuleiroPresenter: ITabuleiroPresenter) {
     }
 
     private fun insertViewsIntoObjectAndMapToArray2D(arrayViews: Array<View?>){
-        var rowCounter = Constantes.INIT_VAR_INT_WITH_ZERO.valor
-        var colCounter = Constantes.INIT_VAR_INT_WITH_ZERO.valor
-        var arrayViewContador = Constantes.INIT_VAR_INT_WITH_ZERO.valor
+        var rowCounter = 0
+        var colCounter = 0
+        var arrayViewContador = 0
 
         for (linha in tabuleiroArray2D)
             for (posicao in linha) {
@@ -77,7 +77,7 @@ class ConfiguraTabuleiro(private var tabuleiroPresenter: ITabuleiroPresenter) {
                 colCounter++
 
                 if (colCounter == Constantes.TOTAL_POSICOES_COLUNA.valor) {
-                    colCounter = Constantes.INIT_VAR_INT_WITH_ZERO.valor
+                    colCounter = 0
                     rowCounter++
                 }
 
