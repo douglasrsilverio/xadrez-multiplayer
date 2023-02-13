@@ -1,5 +1,7 @@
 # Xadrez_Multiplayer
 
+App para Android nativo feito com Java.
+
 Posições do tabuleiro e peças implementados de forma dinâmica com a troca de background e source de ImageButtons.
 
 Diagrama de fluxo:
